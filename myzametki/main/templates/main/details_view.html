@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title%}{{ note.title }}{% endblock %}
+
+
+{% block notes%}
+    <div class="features">
+        <h1>{{ note.title }}</h1>
+        <p>{{ note.text }}</p>
+        <p>{{ note.date }}</p>
+        <a href="{% url 'note-delete' note.id %}" class="btn btn-outline-danger">Удалить</a>
+        <a href="{% url 'note-update' note.id %}" class="btn btn-outline-secondary">Редактировать</a>
+        <a href="{% url 'home' %}" class="btn btn-outline-secondary">На главную</a>
+    </div>
+{% endblock %}

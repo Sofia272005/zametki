@@ -1,0 +1,18 @@
+{% extends 'main/layout.html' %}
+
+{% block title%}Добавление заметки{% endblock %}
+
+
+{% block notes%}
+    <div class="features">
+        <h1>Добавление заметки/редактирование заметки</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.title }}<br>
+            {{ form.text }}<br>
+            {{ form.date }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-outline-success" type="submit">Сохранить</button>
+        </form>
+    </div>
+{% endblock %}

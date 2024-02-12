@@ -1,0 +1,48 @@
+body{
+    background: #2c2c2c;
+    color: #c0c0c0;
+}
+
+aside{
+    float: left;
+    background: #373737;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #c0c0c0;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img{
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+}
+
+aside pre{
+    margin-left: 42%;
+}
+
+
+main input-group{
+    display: block;
+    margin: 0 auto;
+}
+
+main{
+    padding: 1%;
+    margin-left: 21.5%;
+}
+
+.features {
+  padding-left: 1%;
+  padding-top: 1%;
+}
+
+main h2{
+    text-align: center
+    font-size: 40px;
+    color: #c0c0c0;
+}
+
+
